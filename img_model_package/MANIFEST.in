@@ -1,0 +1,17 @@
+include *.txt
+include *.md
+include *.cfg
+include *.pkl
+recursive-include ./img_model_package/*.py
+
+include img_model_package/trained_models/*.pkl
+include img_model_package/trained_models/*.h5
+include img_model_package/VERSION
+include img_model_package/datasets/test_data/Black-grass/1.png
+include img_model_package/datasets/test_data/Charlock/1.png
+
+include ./requirements.txt
+exclude *.log
+
+recursive-exclude * __pycache__
+recursive-exclude * *.py[co]
